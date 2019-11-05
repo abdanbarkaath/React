@@ -6,11 +6,13 @@ import './App.css';
 import Subscribe from './components/Subscribe'
 import Counter from './components/Counter';
 import Click from './components/Click';
+import Check from './components/check';
 
 function App() {
   return (
     <div className="App">
-    <Counter></Counter>
+      <Check></Check>
+    {/* <Counter></Counter> */}
       {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -30,8 +32,8 @@ function App() {
       <Greet name ="Qadeer"/>
       <Greet name ="Basil"/>
       <Welcome name = "Turab"></Welcome> */}
-      <Subscribe></Subscribe>
-      <Click></Click>
+      {/* <Subscribe></Subscribe> */}
+      {/* <Click></Click> */}
     </div>
   );
 }

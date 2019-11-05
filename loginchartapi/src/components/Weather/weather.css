@@ -1,0 +1,42 @@
+#main-back {
+  padding-top: 20px;
+  height: 687px;
+  background-image: url("https://scx1.b-cdn.net/csz/news/800/2018/1-whytheweathe.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+#main-back #inside-back {
+  padding-left: 500px;
+}
+
+#main-back #inside-back h1 {
+  height: 70px;
+  color: black;
+  margin-right: 15px;
+}
+
+#main-back #getin {
+  border-radius: 5px;
+  height: 35px;
+  width: 300px;
+  -webkit-box-shadow: 0;
+          box-shadow: 0;
+}
+
+#main-back .sub {
+  margin-top: 5px;
+  width: 300px;
+}
+
+#main-back .day {
+  margin: 10px 5px 15px 0px;
+  width: 145px;
+}
+
+#main-back .hour {
+  margin: 10px 0px 15px 5px;
+  width: 145px;
+}
+/*# sourceMappingURL=weather.css.map */

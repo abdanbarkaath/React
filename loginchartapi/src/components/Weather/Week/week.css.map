@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,SAAS,CAAA;EACL,KAAK,EAAE,MAAM;EACb,MAAM,EAAE,KAAK;CAChB",
+    "sources": [
+        "week.scss"
+    ],
+    "names": [],
+    "file": "week.css"
+}
