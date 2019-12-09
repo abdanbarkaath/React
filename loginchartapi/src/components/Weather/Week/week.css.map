@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "AAAA,AAAA,SAAS,CAAA;EACL,KAAK,EAAE,MAAM;EACb,MAAM,EAAE,KAAK;CAChB",
+    "mappings": "AAAA,AAAA,SAAS,CAAA;EACL,KAAK,EAAE,MAAM;EACb,MAAM,EAAE,KAAK;CAChB;;AACD,AAAA,KAAK,CAAA;EACD,MAAM,EAAE,GAAG;CACd",
     "sources": [
         "week.scss"
     ],

@@ -3,6 +3,7 @@ import axios from "axios";
 import "./weather.css";
 import Day from "./Day/Day";
 import Week from "./Week/Week";
+import ProgressBar from "react-bootstrap/ProgressBar";
 
 export default class Weather extends Component {
   constructor(props) {
@@ -11,12 +12,17 @@ export default class Weather extends Component {
     this.state = {
       city: "",
       cityCode: "",
-      display: 0
+      display: 0,
+      // now:0,
+      show: 0
     };
     this.update = this.update.bind(this);
     this.sendData = this.sendData.bind(this);
     this.goDay = this.goDay.bind(this);
     this.goWeekly = this.goWeekly.bind(this);
+  }
+  componentDidUpdate() {
+    console.log(this.state.now);
   }
 
   sendData() {
@@ -30,7 +36,8 @@ export default class Weather extends Component {
         // console.log(response.data[0].Key);
         this.setState({
           cityCode: response.data[0].Key,
-          display: 1
+          display: 1,
+          show: 1
         });
       });
   }
@@ -44,11 +51,13 @@ export default class Weather extends Component {
   goDay() {
     this.setState({
       display: 1
+      // show:1
     });
   }
   goWeekly() {
     this.setState({
-      display: 2
+      display: 2,
+      show: 1
     });
   }
   render() {
@@ -69,16 +78,16 @@ export default class Weather extends Component {
               onChange={this.update}
             />
             <br></br>
-          <button className="btn btn-danger sub" onClick={this.sendData}>
-            Get Temperatures
-          </button>
-          <br />
-          <button className="btn btn-success day" onClick={this.goDay}>
-            Daily
-          </button>
-          <button className="btn btn-success hour" onClick={this.goWeekly}>
-            Hourly
-          </button>
+            <button className="btn btn-danger sub" onClick={this.sendData}>
+              Get Temperatures
+            </button>
+            <br />
+            <button className="btn btn-success day" onClick={this.goDay}>
+              Daily
+            </button>
+            <button className="btn btn-success hour" onClick={this.goWeekly}>
+              Hourly
+            </button>
           </div>
           <Day cityCode={this.state.cityCode}></Day>
         </div>
@@ -99,21 +108,21 @@ export default class Weather extends Component {
               type="text"
               value={this.state.city}
               onChange={this.update}
-            /><br></br>
-          <button className="btn btn-danger sub" onClick={this.sendData}>
-            Get Temperatures
-          </button>
-          <br />
-          <button className="btn btn-success day" onClick={this.goDay}>
-            Daily
-          </button>
-          <button className="btn btn-success hour" onClick={this.goWeekly}>
-            Hourly
-          </button>
-
+            />
+            <br></br>
+            <button className="btn btn-danger sub" onClick={this.sendData}>
+              Get Temperatures
+            </button>
+            <br />
+            <button className="btn btn-success day" onClick={this.goDay}>
+              Daily
+            </button>
+            <button className="btn btn-success hour" onClick={this.goWeekly}>
+              Hourly
+            </button>
           </div>
           <div className="weeks">
-          <Week cityCode={this.state.cityCode}></Week>
+            <Week cityCode={this.state.cityCode}></Week>
           </div>
           {/* <Day  cityCode = {this.state.cityCode}></Day> */}
         </div>
@@ -141,10 +150,10 @@ export default class Weather extends Component {
                 onChange={this.update}
               />
               <br></br>
-            <button className="btn btn-danger sub" onClick={this.sendData}>
-              Get Temperatures
-            </button>
-            <br />
+              <button className="btn btn-danger sub" onClick={this.sendData}>
+                Get Temperatures
+              </button>
+              <br />
             </div>
 
             {/* <Day  cityCode = {this.state.cityCode}></Day> */}
