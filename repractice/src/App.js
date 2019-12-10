@@ -1,14 +1,18 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import Child1 from "./components/child1"
+import Cprop from "./components/cprop"
+import Increment from './components/increment';
+import EventHandling from './components/eventHandling';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Child1/>
+        {/* <Cprop userName = "abdan"></Cprop> */}
+        {/* <Child1/> */}
+        {/* <Increment></Increment> */}
+        <EventHandling></EventHandling>
       </header>
     </div>
   );

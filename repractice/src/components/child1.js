@@ -1,27 +1,40 @@
 import React, { Component } from 'react'
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default class child1 extends Component {
     constructor(props) {
         super(props)
     
         this.state = {
-             name:"abdan"
+             name:"abdan",
+             age:23,
+             seen:false
         }
-
+        this.changeVal  = this.changeVal.bind(this);
     }
     
-    changename(){
+    changeVal () {
+        const { seen } = this.state;
         this.setState({
-            name:"ahha"
+            seen: !seen
         })
+    }
+    print(){
+        console.log("hello")
     }
     
     render() {
+        let ages, names;
+        const { seen } = this.state;
+        if(seen){
+            ages =<h1>Age: {this.state.age}</h1>
+        }else{
+            names = <h1>Name: {this.state.name}</h1>
+        }
         return (
             <div>
-                <h1>{this.state.name}</h1>
-                <button  variant="primary" onClick="changename">click me to change the name</button>
+                {ages}
+                {names}
+                <button onClick={this.changeVal}>click me to change the Value</button>
             </div>
         )
     }
