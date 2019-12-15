@@ -1,0 +1,53 @@
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.prevdiv{
+    float: left;
+}
+
+.prev {
+  position: absolute;
+  height: 350px;
+  background: transparent;
+  border: 0;
+  outline: none;
+  }
+
+.next {
+  position: relative;
+  float: right;
+  height: 350px;
+  top: -354px;
+  background: transparent;
+  border: 0;
+  outline: none;
+}
+.maindiv {
+  width: 95%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.loop{
+
+}
+.card {
+
+}
+.media {
+    height: 200px;
+  }
+.carouselgrid{
+    height: 350px;
+    overflow: hidden;
+    width: 100%;
+    z-index: -1;
+}
+.img {
+    position: relative;
+    width: 100%;
+    top: -125px;
+    z-index: -1;
+  }

@@ -1,0 +1,32 @@
+.inputDiv{
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+.inputBox{
+    width: 229px;
+    margin-right: 10px;
+}
+.litype{
+    margin-top: 20px;
+    padding-left: 1px;
+}
+.textflow{
+    float: left;
+}
+
+.listBody{
+    width: 40%;
+    margin: 0 auto;
+}
+.ultype{
+    list-style-type: decimal;
+    padding-left: 2px;
+}
+.xbtn{
+    float: right;
+}
+.textflowhidden{
+    float: left;
+    text-decoration: line-through;
+}
