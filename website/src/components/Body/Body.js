@@ -24,7 +24,7 @@ export default class Body extends Component {
   render() {
     let { info } = this.state;
     let infos = info.map((val, index) => {
-      return <Grid className={style.loop} key={index} item xs={4}>
+      return <Grid className={style.loop} key={index} item xs={12} md={4}>
           <Card className={style.card}>
       <CardActionArea>
         <CardMedia
