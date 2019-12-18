@@ -110,6 +110,7 @@ export default class Carousel extends Component {
           </div>
           <Grid item xs={12} className={css.carouselgrid}>
               <img src={this.state.singleImg.imgPath} className={css.img} ></img>
+              {/* <p>{`${this.state.start+1}/${this.state.tutorialSteps.length}`}</p> */}
           </Grid>
           <button onClick={() => this.nextSlide()} className={css.next}>
             next slide
