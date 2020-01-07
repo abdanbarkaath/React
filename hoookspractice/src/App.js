@@ -6,7 +6,13 @@ import Hook2 from './components/Hook2';
 import HookInput from './components/HookInput';
 import Hookobj from './components/Hookobj';
 import HookTimer from './components/HookTimer';
+import Hookeffect from './components/Hookeffect';
+import DataFetching from './components/DataFetching';
+import ComponentA from './components/Context/ComponentA';
+import Chook1 from './components/CustomHooks/Chook1';
+import Chook2 from './components/CustomHooks/Chook2';
 
+export const UserContext = React.createContext()
 function App() {
   return (
     <div className="App">
@@ -14,7 +20,14 @@ function App() {
       {/* <Hook2></Hook2> */}
       {/* <HookInput></HookInput> */}
       {/* <Hookobj></Hookobj> */}
-      <HookTimer></HookTimer>
+      {/* <HookTimer></HookTimer> */}
+      {/* <Hookeffect></Hookeffect> */}
+      {/* <DataFetching></DataFetching> */}
+      {/* <UserContext.Provider value={"abdan"}>
+        <ComponentA />
+      </UserContext.Provider> */}
+      <Chook1></Chook1>
+      <Chook2></Chook2>
     </div>
   );
 }

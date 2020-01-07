@@ -11,7 +11,7 @@ import Check from './components/check';
 function App() {
   return (
     <div className="App">
-      <Check></Check>
+      {/* <Check></Check> */}
     {/* <Counter></Counter> */}
       {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
@@ -32,7 +32,7 @@ function App() {
       <Greet name ="Qadeer"/>
       <Greet name ="Basil"/>
       <Welcome name = "Turab"></Welcome> */}
-      {/* <Subscribe></Subscribe> */}
+      <Subscribe></Subscribe>
       {/* <Click></Click> */}
     </div>
   );

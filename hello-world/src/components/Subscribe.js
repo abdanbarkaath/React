@@ -6,6 +6,7 @@ class Subscribe extends Component {
         this.state = {
         message:"welcome guest"
         }
+        // this.changeMsg = this.changeMsg;
     }
 
     changeMsg(){
