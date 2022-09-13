@@ -16,10 +16,11 @@
   }
 
 .next {
-  position: relative;
+  position: absolute;
   float: right;
   height: 350px;
-  top: -354px;
+  top: 48px;
+  left: 93%;
   background: transparent;
   border: 0;
   outline: none;
@@ -50,4 +51,5 @@
     width: 100%;
     top: -125px;
     z-index: -1;
+    height: 650px;
   }

@@ -1,0 +1,31 @@
+.table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+.ts {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+    font-size: 15px;
+    letter-spacing: 1.5px;
+    color: #404040;
+  }
+
+  .name{
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+    width: 20%;
+    font-size: 15px;
+    letter-spacing: 1.5px;
+    color: #404040;
+  }
+
+.h1{
+    margin-top: 10%;
+    color: #2f5c8f;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
